@@ -1,0 +1,154 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/bg-intro-mobile.png);
+    background-color:hsl(0, 100%, 74%);
+    font-size: 16px;
+}
+main {
+    margin: 0 auto;
+    width: 80%;
+  
+}
+.section_one {
+    margin: 5em 0;
+    text-align: center;
+    color:#fff;
+}
+.welcome_text {
+    margin-top: 1em;
+    line-height: 1.5em;
+    font-size: 1rem;
+}
+.banner {
+    margin: 1em 0;
+    background-color:  hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 1.5em 2em;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 7px hsl(249, 10%, 26%)  ;
+}
+span {
+    font-weight: 400;
+}
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 2em;  
+    box-shadow: 0px 3px  hsla(249, 10%, 26%, 0.404);
+   
+}
+.form-control input {
+    padding: 1em 1em;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #dfdddd;
+}
+
+.form-control {
+    width: 90%;
+    position: relative;
+}
+.form-control label {
+    display:block;
+}
+.form-control .fa-exclamation-circle {
+    position: absolute;
+    visibility: hidden;
+    right:25px;
+    top: 15px;
+}
+
+.form-control label {
+    display: none;
+}
+.error,
+.error .msg,
+.error .icon {
+    color:hsl(0, 100%, 74%);
+    visibility: visible;
+}
+
+.msg {
+    margin:.5em 0;
+    font-size: .8rem;
+    visibility: hidden;
+    color:hsl(0, 100%, 74%);
+    font-style: italic;
+    font-size: 0.6rem;
+    text-align: right;
+}
+
+.form-control.erro input {
+    border-color: hsl(0, 100%, 74%);
+}
+.form_btn {
+    border: none;
+    padding: 1em 3em;
+    margin: 1em 0;
+    background-color: hsl(154, 62%, 51%);
+    color: white;
+    width:90%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+.terms {
+    color: hsl(246, 25%, 77%);
+    font-size: .8rem;
+    padding: .5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.terms span {
+    color: hsl(0, 100%, 74%); 
+    font-weight: 600;
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center;
+     }
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     }
+
+@media (min-width: 768px){
+    main {
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+    form {
+        min-width: 400px;
+        width:100%;
+    }
+    .section_one {
+        width: 50%;
+        text-align: left;
+    }
+    .section_two {
+        width: 50%;
+        padding: 2em;
+    }
+    .banner {
+        margin-top: 2em;
+        padding: 1em 0;
+    }
+}
+
